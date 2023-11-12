@@ -14,3 +14,4 @@ Contents
     :maxdepth: 2
 
     test-pages/index
+    change-log/index

@@ -83,7 +83,7 @@ pages:
       - public
 
 publish-package:
-  extends: .poetry install
+  extends: .poetry-base
   needs: []
   stage: deploy
   rules:
@@ -104,4 +104,4 @@ release:
   release:
     tag_name: $CI_COMMIT_TAG
     name: "$CI_COMMIT_TAG"
-    description: "./docs/source/change_log/${CI_COMMIT_TAG}.md"
+    description: "./docs/source/change-log/${CI_COMMIT_TAG}.md"

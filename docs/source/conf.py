@@ -42,6 +42,9 @@ exclude_patterns = []
 extensions += ["sphinx.ext.todo"]
 todo_include_todos = True
 
+# Markdown
+extensions += ["myst_parser"]
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
