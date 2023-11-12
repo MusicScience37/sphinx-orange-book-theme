@@ -1,0 +1,27 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        description: Format Python files using black.
+        entry: black
+        language: python
+        require_serial: true
+        types_or: [python]
+      - id: isort
+        name: isort
+        description: Format Python files using isort.
+        entry: isort
+        language: python
+        require_serial: true
+        types_or: [python]
