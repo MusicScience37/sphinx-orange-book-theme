@@ -45,6 +45,20 @@ todo_include_todos = True
 # Markdown
 extensions += ["myst_parser"]
 
+# setting of mathjax
+extensions += ["sphinx.ext.mathjax"]
+# force to use MathJax 2 for compatibility with Plotly
+mathjax_path = (
+    "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+)
+mathjax_config = {
+    "TeX": {
+        "Macros": {
+            "bm": ["{\\boldsymbol{#1}}", 1],
+        },
+    },
+}
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
