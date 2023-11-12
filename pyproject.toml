@@ -6,6 +6,7 @@ authors = ["Kenta Kabashima <kenta_program37@hotmail.co.jp>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme"
+documentation = "https://sphinx-orange-book-theme-musicscience37projects--1dc46f9ab80e60.gitlab.io/"
 repository = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme.git"
 keywords = ["sphinx"]
 # Classifiers: https://pypi.org/classifiers/
