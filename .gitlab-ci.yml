@@ -50,3 +50,47 @@ spell check:
       "**/*.bash"
       "**/*.css"
   interruptible: true
+
+build docs:
+  extends: .poetry-base
+  stage: test
+  needs: []
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v/
+      variables:
+        PROJECT_VERSION: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH
+      variables:
+        PROJECT_VERSION: $CI_COMMIT_SHORT_SHA
+  script:
+    - poetry run sphinx-build -b html -W -q -D release=$PROJECT_VERSION
+      docs/source docs/build
+  artifacts:
+    paths:
+      - "docs/build"
+    expire_in: "1 week"
+
+pages:
+  stage: deploy
+  image: alpine
+  needs: [build docs]
+  #rules:
+  #  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - mv docs/build public
+  artifacts:
+    paths:
+      - public
+
+release:
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  stage: release
+  needs: []
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v/
+  script:
+    - echo "This is a release job."
+  release:
+    tag_name: $CI_COMMIT_TAG
+    name: "$CI_COMMIT_TAG"
+    description: "./docs/source/change_log/${CI_COMMIT_TAG}.md"
