@@ -7,6 +7,7 @@ sast:
   stage: test
 include:
   - template: Security/SAST.gitlab-ci.yml
+  - template: Security/Dependency-Scanning.gitlab-ci.yml
 
 .poetry-base:
   image: musicscience37/pipenv:jammy
