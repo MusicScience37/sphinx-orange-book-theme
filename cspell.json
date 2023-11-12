@@ -6,17 +6,24 @@
   "words": [
     "autobuild",
     "interruptible",
+    "iostream",
     "isort",
     "Kabashima",
     "Kenta",
     "maxdepth",
     "MusicScience37",
+    "nodiscard",
+    "pathlib",
     "pipenv",
+    "pmatrix",
     "pypi",
     "SAST",
+    "seealso",
     "toctree",
     "todos",
-    "venv"
+    "venv",
+    "versionadded",
+    "versionchanged"
   ],
   "ignoreWords": [],
   "import": []
