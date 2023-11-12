@@ -74,8 +74,8 @@ pages:
   stage: deploy
   image: alpine
   needs: [build docs]
-  #rules:
-  #  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   script:
     - mv docs/build public
   artifacts:
@@ -84,7 +84,7 @@ pages:
 
 publish-package:
   extends: .poetry-base
-  needs: []
+  needs: [build docs]
   stage: deploy
   rules:
     - if: $CI_COMMIT_TAG =~ /^v/
@@ -96,7 +96,7 @@ publish-package:
 release:
   image: registry.gitlab.com/gitlab-org/release-cli:latest
   stage: release
-  needs: []
+  needs: [publish-package]
   rules:
     - if: $CI_COMMIT_TAG =~ /^v/
   script:
