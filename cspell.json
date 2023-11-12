@@ -9,9 +9,11 @@
     "isort",
     "Kabashima",
     "Kenta",
+    "maxdepth",
     "MusicScience37",
     "pipenv",
     "SAST",
+    "toctree",
     "venv"
   ],
   "ignoreWords": [],
