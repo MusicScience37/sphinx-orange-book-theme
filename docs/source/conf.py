@@ -38,6 +38,10 @@ extensions = []
 templates_path = ["_templates"]
 exclude_patterns = []
 
+# setting of todo
+extensions += ["sphinx.ext.todo"]
+todo_include_todos = True
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
