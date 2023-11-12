@@ -5,6 +5,7 @@
   "dictionaries": [],
   "words": [
     "autobuild",
+    "gruvbox",
     "infty",
     "interruptible",
     "iostream",
@@ -17,6 +18,7 @@
     "pathlib",
     "pipenv",
     "pmatrix",
+    "pygment",
     "pypi",
     "SAST",
     "seealso",
