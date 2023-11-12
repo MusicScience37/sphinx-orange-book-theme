@@ -3,7 +3,22 @@ name = "sphinx-orange-book-theme"
 version = "0.1.0"
 description = "An orange version of sphinx-book-theme."
 authors = ["Kenta Kabashima <kenta_program37@hotmail.co.jp>"]
+license = "MIT"
 readme = "README.md"
+homepage = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme"
+repository = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme.git"
+keywords = ["sphinx"]
+# Classifiers: https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Framework :: Sphinx :: Theme",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development :: Documentation",
+]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
@@ -20,3 +35,9 @@ sphinx-autobuild = "^2021.3.14"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.plugins."sphinx.html_themes"]
+sphinx_orange_book_theme = "sphinx_orange_book_theme"
