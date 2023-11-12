@@ -1,0 +1,52 @@
+stages:
+  - test
+  - deploy
+  - release
+
+sast:
+  stage: test
+include:
+  - template: Security/SAST.gitlab-ci.yml
+
+.poetry-base:
+  image: musicscience37/pipenv:jammy
+  variables:
+    POETRY_PYTHON_VERSION: "3.11"
+  before_script:
+    - poetry env use ${POETRY_PYTHON_VERSION}
+    - poetry install
+  cache:
+    key:
+      prefix: poetry-linux-${POETRY_PYTHON_VERSION}
+      files:
+        - poetry.lock
+    paths:
+      - .venv
+
+pre-commit:
+  extends: .poetry-base
+  stage: test
+  needs: []
+  script:
+    - poetry run pre-commit run --all-files
+
+spell check:
+  stage: test
+  needs: []
+  image: node
+  script:
+    - npm install -g cspell
+    - cspell lint
+      "**/*.py"
+      "**/*.txt"
+      "**/*.md"
+      "**/*.rst"
+      "**/*.bib"
+      "**/*.yaml"
+      "**/*.yml"
+      "**/*.json"
+      "**/*.toml"
+      "**/*.sh"
+      "**/*.bash"
+      "**/*.css"
+  interruptible: true
