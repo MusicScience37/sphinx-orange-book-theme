@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "sphinx-orange-book-theme"
+version = "0.1.0"
+description = "An orange version of sphinx-book-theme."
+authors = ["Kenta Kabashima <kenta_program37@hotmail.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+sphinx-book-theme = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+black = "^23.11.0"
+isort = "^5.12.0"
+toml = "^0.10.2"
+types-toml = "^0.10.8.7"
+sphinx-autobuild = "^2021.3.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
