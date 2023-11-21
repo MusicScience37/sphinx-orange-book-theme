@@ -13,5 +13,6 @@ Contents
 .. toctree::
     :maxdepth: 2
 
+    usage
     test-pages/index
     change-log/index
