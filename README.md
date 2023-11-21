@@ -1,5 +1,11 @@
 # sphinx-orange-book-theme
 
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sphinx-orange-book-theme)
+[![PyPI - Version](https://img.shields.io/pypi/v/sphinx-orange-book-theme)](https://pypi.org/project/sphinx-orange-book-theme/)
+![PyPI - License](https://img.shields.io/pypi/l/sphinx-orange-book-theme)
+![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline-status/MusicScience37Projects%2Futility-libraries%2Fsphinx-orange-book-theme?branch=main)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
 An orange version of [sphinx-book-theme](https://sphinx-book-theme.readthedocs.io/en/latest/index.html).
 
 This python package overrides CSS of sphinx-book-theme
