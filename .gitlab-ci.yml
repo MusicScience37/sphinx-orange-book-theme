@@ -69,6 +69,7 @@ build docs:
           - "3.10"
           - "3.11"
   script:
+    - bash ./docs/cpp_example/generate_doxygen_xml.sh
     - poetry run sphinx-build -b html -W -q -D release=$PROJECT_VERSION
       docs/source docs/build
   artifacts:
