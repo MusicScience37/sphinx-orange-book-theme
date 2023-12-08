@@ -24,6 +24,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
 sphinx-book-theme = "^1.0.1"
+pydata-sphinx-theme = "^0.14.4"
 sphinx = "^6.2.1"
 
 [tool.poetry.group.dev.dependencies]

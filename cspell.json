@@ -20,6 +20,7 @@
     "pathlib",
     "pipenv",
     "pmatrix",
+    "pydata",
     "pygment",
     "pypi",
     "SAST",
