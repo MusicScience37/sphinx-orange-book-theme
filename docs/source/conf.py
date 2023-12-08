@@ -59,6 +59,20 @@ mathjax_config = {
     },
 }
 
+# -- Options for breathe -----------------------------------------------------
+
+extensions += ["breathe"]
+
+breathe_projects = {"cpp_example": "../cpp_example/doxygen/xml"}
+
+breathe_default_project = "cpp_example"
+
+breathe_default_members = ("members",)
+
+breathe_domain_by_extension = {
+    "h": "cpp",
+}
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 

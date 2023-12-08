@@ -36,6 +36,7 @@ types-toml = "^0.10.8.7"
 sphinx-autobuild = "^2021.3.14"
 myst-parser = "^2.0.0"
 doc8 = "^1.1.1"
+breathe = "^4.35.0"
 
 [build-system]
 requires = ["poetry-core"]

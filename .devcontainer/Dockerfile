@@ -1,4 +1,4 @@
-FROM musicscience37/pipenv:jammy
+FROM musicscience37/sphinx-doxygen
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \

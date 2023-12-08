@@ -5,3 +5,4 @@ Test pages
     :maxdepth: 1
 
     test-page-ja
+    test-breathe
