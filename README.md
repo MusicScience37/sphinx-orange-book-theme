@@ -11,6 +11,9 @@ An orange version of [sphinx-book-theme](https://sphinx-book-theme.readthedocs.i
 This python package overrides CSS of sphinx-book-theme
 to change its design.
 
+For an example of built document, see
+[Documentation built on main branch](https://sphinx-orange-book-theme-musicscience37projects--1dc46f9ab80e60.gitlab.io/).
+
 ## Usage
 
 To use this theme,
