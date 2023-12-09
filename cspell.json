@@ -4,8 +4,10 @@
   "dictionaryDefinitions": [],
   "dictionaries": [],
   "words": [
+    "amsmath",
     "autobuild",
     "boldsymbol",
+    "dollarmath",
     "doxygen",
     "doxygenclass",
     "gruvbox",
@@ -21,6 +23,7 @@
     "nodiscard",
     "pathlib",
     "pipenv",
+    "plotly",
     "pmatrix",
     "pydata",
     "pygment",

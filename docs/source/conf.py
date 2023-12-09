@@ -42,36 +42,31 @@ exclude_patterns = []
 extensions += ["sphinx.ext.todo"]
 todo_include_todos = True
 
-# Markdown
-extensions += ["myst_parser"]
-
 # setting of mathjax
 extensions += ["sphinx.ext.mathjax"]
-# force to use MathJax 2 for compatibility with Plotly
-mathjax_path = (
-    "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-)
-mathjax_config = {
-    "TeX": {
-        "Macros": {
+mathjax3_config = {
+    "tex": {
+        "macros": {
             "bm": ["{\\boldsymbol{#1}}", 1],
         },
     },
 }
 
-# -- Options for breathe -----------------------------------------------------
-
+# settings of breathe
 extensions += ["breathe"]
-
 breathe_projects = {"cpp_example": "../cpp_example/doxygen/xml"}
-
 breathe_default_project = "cpp_example"
-
 breathe_default_members = ("members",)
-
 breathe_domain_by_extension = {
     "h": "cpp",
 }
+
+# settings of myst-nb
+extensions += ["myst_nb"]  # This will automatically include myst_parser
+myst_enable_extensions = [
+    "amsmath",
+    "dollarmath",
+]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

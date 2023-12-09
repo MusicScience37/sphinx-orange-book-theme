@@ -31,12 +31,20 @@ sphinx = "^6.2.1"
 pre-commit = "^3.5.0"
 black = "^23.11.0"
 isort = "^5.12.0"
+
+[tool.poetry.group.doc.dependencies]
 toml = "^0.10.2"
 types-toml = "^0.10.8.7"
 sphinx-autobuild = "^2021.3.14"
 myst-parser = "^2.0.0"
 doc8 = "^1.1.1"
+
+[tool.poetry.group.test.dependencies]
 breathe = "^4.35.0"
+myst-nb = "^1.0.0"
+jupyter = "^1.0.0"
+plotly = "^5.18.0"
+pandas = "^2.1.4"
 
 [build-system]
 requires = ["poetry-core"]

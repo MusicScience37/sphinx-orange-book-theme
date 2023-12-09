@@ -6,3 +6,4 @@ Test pages
 
     test-page-ja
     test-breathe
+    test-myst-nb
