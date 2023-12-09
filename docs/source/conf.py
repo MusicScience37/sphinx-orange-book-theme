@@ -70,6 +70,14 @@ myst_enable_extensions = [
 nb_execution_mode = "cache"
 nb_execution_cache_path = "jupyter_cache"
 
+# setting of opengraph
+# https://pypi.org/project/sphinxext-opengraph/
+extensions += ["sphinxext.opengraph"]
+ogp_site_url = (
+    "https://sphinx-orange-book-theme-musicscience37projects--1dc46f9ab80e60.gitlab.io/"
+)
+ogp_site_name = "sphinx-orange-book-theme"
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 

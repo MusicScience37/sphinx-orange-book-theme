@@ -2778,6 +2778,20 @@ lint = ["docutils-stubs", "flake8", "mypy"]
 test = ["pytest"]
 
 [[package]]
+name = "sphinxext-opengraph"
+version = "0.9.0"
+description = "Sphinx Extension to enable OGP support"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "sphinxext-opengraph-0.9.0.tar.gz", hash = "sha256:4e57e25b6d56f47b9c06a5a5d68a2a00ed3577c8a39e459b52118c6bfe5e8c8b"},
+    {file = "sphinxext_opengraph-0.9.0-py3-none-any.whl", hash = "sha256:ab1eb2ffb531fb85b695e719dba7b0245b0643f6b6c0d1cc258d15a81e72a9f1"},
+]
+
+[package.dependencies]
+sphinx = ">=4.0"
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.23"
 description = "Database Abstraction Library"
@@ -3197,4 +3211,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "752c828b7e177c9474e48f8ebe589c0e53c5dbf597b55d2e532233a99b3a3a8b"
+content-hash = "ff63e99ea04417634a6bab707cbdd2b8971100730c5342a4271c1cf502b84ab3"
