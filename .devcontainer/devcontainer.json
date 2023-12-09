@@ -8,6 +8,7 @@
         "davidanson.vscode-markdownlint",
         "esbenp.prettier-vscode",
         "ms-python.python",
+        "ms-toolsai.jupyter",
         "njpwerner.autodocstring",
         "lextudio.restructuredtext",
         "trond-snekvik.simple-rst",
