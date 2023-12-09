@@ -67,6 +67,8 @@ myst_enable_extensions = [
     "amsmath",
     "dollarmath",
 ]
+nb_execution_mode = "cache"
+nb_execution_cache_path = "jupyter_cache"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
