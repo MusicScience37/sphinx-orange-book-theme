@@ -25,5 +25,5 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.enableFiletypes": ["toml"]
+  "cSpell.enableFiletypes": ["shellscript", "toml"]
 }
