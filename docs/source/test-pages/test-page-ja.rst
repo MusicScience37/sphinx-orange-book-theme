@@ -220,3 +220,12 @@ term
       a &= 1 \\
       b &= 12345 \\
       \bm{c} &= \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix}
+
+PlantUML
+----------------
+
+.. uml::
+
+    activate クライアント
+    クライアント -> サーバ ++ : リクエスト
+    return レスポンス

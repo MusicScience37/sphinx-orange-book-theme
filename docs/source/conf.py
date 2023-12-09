@@ -3,6 +3,7 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
 import pathlib
 
 import toml
@@ -77,6 +78,20 @@ ogp_site_url = (
     "https://sphinx-orange-book-theme-musicscience37projects--1dc46f9ab80e60.gitlab.io/"
 )
 ogp_site_name = "sphinx-orange-book-theme"
+
+# setting of PlantUML
+extensions += ["sphinxcontrib.plantuml"]
+plantuml_jar_path = os.getenv("PLANTUML_JAR_PATH")
+plantuml = "java -jar " + plantuml_jar_path
+plantuml_output_format = "svg"
+plantuml_syntax_error_image = True
+
+# setting of bibtex
+# https://sphinxcontrib-bibtex.readthedocs.io/
+extensions += ["sphinxcontrib.bibtex"]
+bibtex_bibfiles = ["bibliography.bib"]
+bibtex_default_style = "plain"
+bibtex_reference_style = "super"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
