@@ -6,4 +6,5 @@ Test pages
 
     test-page-ja
     test-breathe
-    test-myst-nb
+    test-myst-nb-jupyter
+    test-myst-nb-markdown
