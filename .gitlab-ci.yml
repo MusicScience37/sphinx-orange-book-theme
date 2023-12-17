@@ -66,6 +66,7 @@ build docs:
   parallel:
     matrix:
       - POETRY_PYTHON_VERSION:
+          - "3.9"
           - "3.10"
           - "3.11"
   script:
@@ -92,6 +93,7 @@ pages:
 publish-package:
   extends: .poetry-base
   needs:
+    - "build docs: [3.9]"
     - "build docs: [3.10]"
     - "build docs: [3.11]"
   stage: deploy
