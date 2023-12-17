@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sphinx-orange-book-theme"
-version = "0.1.1"
+version = "0.1.2"
 description = "An orange version of sphinx-book-theme."
 authors = ["Kenta Kabashima <kenta_program37@hotmail.co.jp>"]
 license = "MIT"
@@ -11,7 +11,7 @@ repository = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx
 keywords = ["sphinx"]
 # Classifiers: https://pypi.org/classifiers/
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Framework :: Sphinx :: Theme",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
