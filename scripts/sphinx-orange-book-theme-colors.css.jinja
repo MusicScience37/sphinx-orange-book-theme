@@ -1,0 +1,76 @@
+/* ****************************************************************************
+ * Customization of colors in sphinx-book-theme.
+ * Reference: https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/styling.html
+ *
+ * This file is generated from scripts/sphinx-orange-book-theme-colors.css.jinja
+ * in sphinx_orange_book_theme source code.
+ *************************************************************************** */
+
+/* ****************************************************************************
+ * Colors
+ *************************************************************************** */
+html[data-theme="light"] {
+  /* teal in the original theme */
+  --pst-color-primary: {{ calculate_color("primary", 500) }};
+  --pst-color-primary-bg: {{ calculate_color("primary", 200) }};
+  /* violet in the original theme */
+  --pst-color-secondary: {{ calculate_color("secondary", 500) }};
+  --pst-color-secondary-bg: {{ calculate_color("secondary", 200) }};
+  /* pink in the original theme */
+  --pst-color-accent: {{ calculate_color("accent", 500) }};
+  --pst-color-accent-bg: {{ calculate_color("accent", 200) }};
+  /* gray in the original theme */
+  --pst-color-background: white;
+  --pst-color-on-background: white;
+  --pst-color-surface: {{ calculate_color("gray", 100) }};
+  --pst-color-on-surface: {{ calculate_color("gray", 900) }};
+  --pst-color-text-base: {{ calculate_color("gray", 900) }};
+  --pst-color-text-muted: {{ calculate_color("gray", 700) }};
+  --pst-color-border: {{ calculate_color("gray", 300) }};
+  --pst-color-border-muted: {{ calculate_color("gray", 200) }};
+  /* info, warning, success, danger */
+  --pst-color-info: {{ calculate_color("info", 500) }};
+  --pst-color-info-bg: {{ calculate_color("info", 200) }};
+  --pst-color-warning: {{ calculate_color("warning", 500) }};
+  --pst-color-warning-bg: {{ calculate_color("warning", 200) }};
+  --pst-color-success: {{ calculate_color("info", 500) }};
+  --pst-color-success-bg: {{ calculate_color("info", 200) }};
+  --pst-color-danger: {{ calculate_color("danger", 500) }};
+  --pst-color-danger-bg: {{ calculate_color("danger", 200) }};
+  /* inline code */
+  --pst-color-inline-code-links: {{ calculate_color("primary", 500) }};
+  --pst-color-inline-code: {{ calculate_color("accent", 500) }};
+}
+
+html[data-theme="dark"] {
+  /* teal in the original theme */
+  --pst-color-primary: {{ calculate_color("primary", 400) }};
+  --pst-color-primary-bg: {{ calculate_color("primary", 800) }};
+  /* violet in the original theme */
+  --pst-color-secondary: {{ calculate_color("secondary", 400) }};
+  --pst-color-secondary-bg: {{ calculate_color("secondary", 800) }};
+  /* pink in the original theme */
+  --pst-color-accent: {{ calculate_color("accent", 400) }};
+  --pst-color-accent-bg: {{ calculate_color("accent", 800) }};
+  /* gray in the original theme */
+  --pst-color-background: black;
+  --pst-color-on-background: {{ calculate_color("gray", 900) }};
+  --pst-color-surface: {{ calculate_color("gray", 900) }};
+  --pst-color-on-surface: {{ calculate_color("gray", 100) }};
+  --pst-color-text-base: {{ calculate_color("gray", 100) }};
+  --pst-color-text-muted: {{ calculate_color("gray", 400) }};
+  --pst-color-border: {{ calculate_color("gray", 600) }};
+  --pst-color-border-muted: {{ calculate_color("gray", 700) }};
+  /* info, warning, success, danger */
+  --pst-color-info: {{ calculate_color("info", 400) }};
+  --pst-color-info-bg: {{ calculate_color("info", 800) }};
+  --pst-color-warning: {{ calculate_color("warning", 400) }};
+  --pst-color-warning-bg: {{ calculate_color("warning", 800) }};
+  --pst-color-success: {{ calculate_color("info", 400) }};
+  --pst-color-success-bg: {{ calculate_color("info", 800) }};
+  --pst-color-danger: {{ calculate_color("danger", 400) }};
+  --pst-color-danger-bg: {{ calculate_color("danger", 800) }};
+  /* inline code */
+  --pst-color-inline-code-links: {{ calculate_color("primary", 400) }};
+  --pst-color-inline-code: {{ calculate_color("accent", 400) }};
+}
