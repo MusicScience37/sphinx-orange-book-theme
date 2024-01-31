@@ -89,7 +89,7 @@ def to_gray(origin: str) -> tuple[float, float, float]:
         tuple[float, float, float]: Gray color.
     """
     l, _, h = rgb_code_to_lch(origin)
-    return l, 20.0, h
+    return l, 10.0, h
 
 
 # Map from name of the original color to the original color.

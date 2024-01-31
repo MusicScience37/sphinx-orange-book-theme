@@ -6,6 +6,7 @@
       "extensions": [
         "streetsidesoftware.code-spell-checker",
         "davidanson.vscode-markdownlint",
+        "jebbs.plantuml",
         "esbenp.prettier-vscode",
         "ms-python.python",
         "ms-toolsai.jupyter",
@@ -17,9 +18,11 @@
         "redhat.vscode-yaml",
         "ms-python.black-formatter",
         "ms-python.isort",
-        "samuelcolvin.jinjahtml"
+        "samuelcolvin.jinjahtml",
+        "executablebookproject.myst-highlight"
       ]
     }
   },
-  "postCreateCommand": "bash ./.devcontainer/setup.bash"
+  "postCreateCommand": "bash ./.devcontainer/setup.bash",
+  "remoteUser": "ubuntu"
 }
