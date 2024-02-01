@@ -23,6 +23,7 @@ LIGHTNESS_MAP = {
     700: 37.4,
     800: 27.2,
     900: 17.0,
+    950: 7.0,
 }
 
 
@@ -101,7 +102,7 @@ ORIGINAL_COLOR_MAP = {
     "gray": to_gray("#DE6316"),
     "info": rgb_code_to_lch("#3BB111"),
     "warning": rgb_code_to_lch("#DE6316"),
-    "danger": rgb_code_to_lch("#FF0000"),
+    "danger": rgb_code_to_lch("#CB0541"),
 }
 
 

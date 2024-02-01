@@ -12,13 +12,13 @@
 html[data-theme="light"] {
   /* teal in the original theme */
   --pst-color-primary: #df671f;
-  --pst-color-primary-bg: #fec9ae;
+  --pst-color-primary-bg: #ffe9dd;
   /* violet in the original theme */
   --pst-color-secondary: #a58713;
-  --pst-color-secondary-bg: #f1d17d;
+  --pst-color-secondary-bg: #fcecca;
   /* pink in the original theme */
   --pst-color-accent: #379f14;
-  --pst-color-accent-bg: #b8e0a3;
+  --pst-color-accent-bg: #e2f2d9;
   /* gray in the original theme */
   --pst-color-background: white;
   --pst-color-on-background: white;
@@ -30,13 +30,13 @@ html[data-theme="light"] {
   --pst-color-border-muted: #dad3cf;
   /* info, warning, success, danger */
   --pst-color-info: #379f14;
-  --pst-color-info-bg: #b8e0a3;
+  --pst-color-info-bg: #e2f2d9;
   --pst-color-warning: #df671f;
-  --pst-color-warning-bg: #fec9ae;
+  --pst-color-warning-bg: #ffe9dd;
   --pst-color-success: #379f14;
-  --pst-color-success-bg: #b8e0a3;
-  --pst-color-danger: #ff3c20;
-  --pst-color-danger-bg: #ffc1ad;
+  --pst-color-success-bg: #e2f2d9;
+  --pst-color-danger: #d2304e;
+  --pst-color-danger-bg: #fee8e8;
   /* inline code */
   --pst-color-inline-code-links: #b75316;
   --pst-color-inline-code: #2a6416;
@@ -45,15 +45,15 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
   /* teal in the original theme */
   --pst-color-primary: #ee8b54;
-  --pst-color-primary-bg: #663113;
+  --pst-color-primary-bg: #41210f;
   /* violet in the original theme */
   --pst-color-secondary: #c4a10d;
-  --pst-color-secondary-bg: #4c3e13;
+  --pst-color-secondary-bg: #312910;
   /* pink in the original theme */
   --pst-color-accent: #59b937;
-  --pst-color-accent-bg: #224814;
+  --pst-color-accent-bg: #192f11;
   /* gray in the original theme */
-  --pst-color-background: black;
+  --pst-color-background: #171514;
   --pst-color-on-background: #2d2826;
   --pst-color-surface: #41210f;
   --pst-color-on-surface: #ffe9dd;
@@ -63,13 +63,13 @@ html[data-theme="dark"] {
   --pst-color-border-muted: #61554f;
   /* info, warning, success, danger */
   --pst-color-info: #59b937;
-  --pst-color-info-bg: #224814;
+  --pst-color-info-bg: #192f11;
   --pst-color-warning: #ee8b54;
-  --pst-color-warning-bg: #663113;
+  --pst-color-warning-bg: #41210f;
   --pst-color-success: #59b937;
-  --pst-color-success-bg: #224814;
-  --pst-color-danger: #ff7553;
-  --pst-color-danger-bg: #7c1a0c;
+  --pst-color-success-bg: #192f11;
+  --pst-color-danger: #ec888d;
+  --pst-color-danger-bg: #4e151d;
   /* inline code */
   --pst-color-inline-code-links: #ee8b54;
   --pst-color-inline-code: #59b937;
