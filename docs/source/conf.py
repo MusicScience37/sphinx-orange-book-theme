@@ -107,5 +107,4 @@ html_theme_options = {
     "pygment_dark_style": "native",
     "repository_url": "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme",
     "use_repository_button": True,
-    "show_prev_next": False,
 }

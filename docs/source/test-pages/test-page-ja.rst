@@ -1,34 +1,34 @@
 日本語のテストページ
 =====================
 
-本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+福沢諭吉「学問のすすめ」
+
+「天は人の上に人を造らず人の下に人を造らず」と言えり。されば天より人を生ずるには、万人は万人みな同じ位にして、生まれながら貴賤上下の差別なく、万物の霊たる身と心との働きをもって天地の間にあるよろずの物を資り、もって衣食住の用を達し、自由自在、互いに人の妨げをなさずしておのおの安楽にこの世を渡らしめ給うの趣意なり。
 
 ヘッダ2
 -----------------
 
-本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+されども今、広くこの人間世界を見渡すに、かしこき人あり、おろかなる人あり、貧しきもあり、富めるもあり、貴人もあり、下人もありて、その有様雲と泥との相違あるに似たるはなんぞや。
 
 ヘッダ3
 ..................
 
-本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+その次第はなはだ明らかなり。『実語教』に、「人学ばざれば智なし、智なき者は愚人なり」とあり。
 
 ヘッダ4
 ```````````````````
 
-本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+されば賢人と愚人との別は学ぶと学ばざるとによりてできるものなり。また世の中にむずかしき仕事もあり、やすき仕事もあり。
 
 ヘッダ5
 ''''''''''''''''''
 
-本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+そのむずかしき仕事をする者を身分重き人と名づけ、やすき仕事をする者を身分軽き人という。
 
 ヘッダ 6
 ^^^^^^^^^^^^^
 
-本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-
-段落を分けた本文
+すべて心を用い、心配する仕事はむずかしくして、手足を用うる力役はやすし。
 
 Inline markup
 --------------------
@@ -67,14 +67,15 @@ term
 
     もう少し説明
 
+.. cspell:disable
+
 引用
 ------------
 
-.. cspell:disable
+    吾輩は猫である。名前はまだ無い。
+    どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
 
-自動生成の適当なテキスト：
-
-    Eirmod invidunt sadipscing est vel ea tation consetetur consetetur ut consequat dolore. At vero labore lorem eirmod tempor dolor facilisis dolor consetetur dolore takimata et clita. Ex sed soluta magna voluptua molestie. Aliquyam vero nostrud delenit dolores velit takimata diam sit. Placerat sadipscing labore voluptua.
+    -- 夏目漱石「吾輩は猫である」
 
 .. cspell:enable
 
@@ -103,36 +104,36 @@ term
 各種メッセージ
 -------------------
 
-.. attention:: attention のテスト
+.. attention:: ``attention`` のテスト
 
-.. caution:: caution のテスト
+.. caution:: ``caution`` のテスト
 
-.. danger:: danger のテスト
+.. danger:: ``danger`` のテスト
 
-.. error:: error のテスト
+.. error:: ``error`` のテスト
 
-.. hint:: hint のテスト
+.. hint:: ``hint`` のテスト
 
-.. important:: important のテスト
+.. important:: ``important`` のテスト
 
-.. note:: note のテスト
+.. note:: ``note`` のテスト
 
-.. tip:: tip のテスト
+.. tip:: ``tip`` のテスト
 
-.. warning:: warning のテスト
+.. warning:: ``warning`` のテスト
 
-.. todo:: todo のテスト
+.. todo:: ``todo`` のテスト
 
 .. versionadded:: 1.2.3
-    versionadded のテスト
+    ``versionadded`` のテスト
 
 .. versionchanged:: 1.2.3
-    versionchanged のテスト
+    ``versionchanged`` のテスト
 
 .. deprecated:: 1.2.3
-    deprecated のテスト
+    ``deprecated`` のテスト
 
-.. seealso:: seealso のテスト
+.. seealso:: ``seealso`` のテスト
 
 ソースコード
 --------------------
