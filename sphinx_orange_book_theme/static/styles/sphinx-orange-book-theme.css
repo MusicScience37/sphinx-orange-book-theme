@@ -7,8 +7,8 @@
 @import url("sphinx-orange-book-theme-colors.css");
 
 /* ****************************************************************************
-   * Font sizes
-   *************************************************************************** */
+ * Font sizes
+ *************************************************************************** */
 html {
   --pst-font-size-h1: 2.5rem;
   --pst-font-size-h2: 2.2rem;
@@ -21,4 +21,12 @@ html {
 article section h1 {
   border-bottom: thin solid var(--pst-color-border);
   padding-bottom: 0.7rem;
+}
+
+/* ****************************************************************************
+ * Others
+ *************************************************************************** */
+/* Prevent dirty images in dark mode. */
+html[data-theme="dark"] img:not(.only-dark):not(.dark-light) {
+  filter: none;
 }
