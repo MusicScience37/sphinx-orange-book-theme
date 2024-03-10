@@ -3,11 +3,9 @@ stages:
   - deploy
   - release
 
-sast:
-  stage: test
 include:
-  - template: Security/SAST.gitlab-ci.yml
-  - template: Security/Dependency-Scanning.gitlab-ci.yml
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
+  - template: Jobs/Secret-Detection.gitlab-ci.yml
 
 .poetry-base:
   image: musicscience37/sphinx-doxygen
