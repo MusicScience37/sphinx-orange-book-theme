@@ -11,16 +11,18 @@ include:
   image: musicscience37/sphinx-doxygen
   variables:
     POETRY_PYTHON_VERSION: "3.11"
+    POETRY_CACHE_DIR: ${CI_PROJECT_DIR}/.poetry-cache
   before_script:
+    - poetry config virtualenvs.in-project true
     - poetry env use ${POETRY_PYTHON_VERSION}
-    - poetry install
+    - poetry install --sync
   cache:
     key:
       prefix: poetry-linux-${POETRY_PYTHON_VERSION}
       files:
         - poetry.lock
     paths:
-      - .venv
+      - .poetry-cache
 
 pre-commit:
   extends: .poetry-base
