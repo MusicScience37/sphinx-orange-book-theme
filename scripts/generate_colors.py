@@ -90,18 +90,18 @@ def to_gray(origin: str) -> tuple[float, float, float]:
         tuple[float, float, float]: Gray color.
     """
     l, _, h = rgb_code_to_lch(origin)
-    return l, 7.0, h
+    return l, 10.0, h
 
 
 # Map from name of the original color to the original color.
 # (The original color is the color to use in calculation of colors.)
 ORIGINAL_COLOR_MAP = {
-    "primary": rgb_code_to_lch("#DE6316"),
-    "secondary": rgb_code_to_lch("#DDB505"),
+    "primary": rgb_code_to_lch("#D4682A"),
+    "secondary": rgb_code_to_lch("#F0C403"),
     "accent": rgb_code_to_lch("#3BB111"),
     "gray": to_gray("#DE6316"),
     "info": rgb_code_to_lch("#3BB111"),
-    "warning": rgb_code_to_lch("#DE6316"),
+    "warning": rgb_code_to_lch("#F0C403"),
     "danger": rgb_code_to_lch("#CB0541"),
 }
 
