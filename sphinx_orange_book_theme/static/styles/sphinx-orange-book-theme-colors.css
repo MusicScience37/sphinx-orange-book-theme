@@ -20,12 +20,12 @@ html[data-theme="light"] {
   --pst-color-accent: #379f14;
   --pst-color-accent-bg: #e2f2d9;
   /* gray in the original theme */
-  --pst-color-background: white;
-  --pst-color-on-background: white;
+  --pst-color-background: #fefdfc;
+  --pst-color-on-background: #fefdfc;
   --pst-color-surface: #fef4ef;
   --pst-color-on-surface: #3f2213;
   --pst-color-text-base: #2d2826;
-  --pst-color-text-muted: #7e6d65;
+  --pst-color-text-muted: #61554f;
   --pst-color-border: #c6bab4;
   --pst-color-border-muted: #dad3cf;
   /* info, warning, success, danger */
