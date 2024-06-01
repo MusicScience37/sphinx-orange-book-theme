@@ -40,6 +40,10 @@ html[data-theme="light"] {
   /* inline code */
   --pst-color-inline-code-links: #b15725;
   --pst-color-inline-code: #2a6416;
+  /* tables */
+  --pst-color-table: #fefdfc;
+  --pst-color-table-row-hover-bg: #ffebbc;
+  --pst-color-table-inner-border: #dad3cf;
 }
 
 html[data-theme="dark"] {
@@ -73,4 +77,8 @@ html[data-theme="dark"] {
   /* inline code */
   --pst-color-inline-code-links: #e68f60;
   --pst-color-inline-code: #59b937;
+  /* tables */
+  --pst-color-table: #171514;
+  --pst-color-table-row-hover-bg: #4c3e14;
+  --pst-color-table-inner-border: #61554f;
 }
