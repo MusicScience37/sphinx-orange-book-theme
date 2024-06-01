@@ -10,7 +10,7 @@ include:
 .poetry-base:
   image: musicscience37/sphinx-doxygen
   variables:
-    POETRY_PYTHON_VERSION: "3.11"
+    POETRY_PYTHON_VERSION: "3.12"
     POETRY_CACHE_DIR: ${CI_PROJECT_DIR}/.poetry-cache
   before_script:
     - poetry config virtualenvs.in-project true
@@ -81,7 +81,7 @@ build docs:
 pages:
   stage: deploy
   image: alpine
-  needs: ["build docs: [3.11]"]
+  needs: ["build docs: [3.12]"]
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   script:
