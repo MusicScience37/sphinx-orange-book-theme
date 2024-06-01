@@ -36,8 +36,8 @@ To use this theme,
 
    ```python
    html_theme_options = {
-       "pygment_light_style": "gruvbox-light",
-       "pygment_dark_style": "native",
+       "pygments_light_style": "gruvbox-light",
+       "pygments_dark_style": "native",
    }
    ```
 
