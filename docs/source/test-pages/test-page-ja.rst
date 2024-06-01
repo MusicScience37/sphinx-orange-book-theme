@@ -87,7 +87,9 @@ term
     :header-rows: 1
 
     列1,列2,列3
-    テスト,テスト,テスト
+    テスト,テスト,`リンク <https://pypi.org/project/sphinx-orange-book-theme/>`_
+    テスト,テスト,`リンク <https://pypi.org/project/sphinx-orange-book-theme/>`_
+    テスト,テスト,`リンク <https://pypi.org/project/sphinx-orange-book-theme/>`_
 
 .. csv-table:: 極端な表
     :widths: auto

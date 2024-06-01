@@ -22,7 +22,7 @@ html[data-theme="light"] {
   /* gray in the original theme */
   --pst-color-background: #fefdfc;
   --pst-color-on-background: #fefdfc;
-  --pst-color-surface: #fef4ef;
+  --pst-color-surface: #fef5f0;
   --pst-color-on-surface: #3f2213;
   --pst-color-text-base: #2d2826;
   --pst-color-text-muted: #61554f;
@@ -57,7 +57,7 @@ html[data-theme="dark"] {
   --pst-color-on-background: #2d2826;
   --pst-color-surface: #2d2826;
   --pst-color-on-surface: #f0eceb;
-  --pst-color-text-base: #f7f6f5;
+  --pst-color-text-base: #f8f6f5;
   --pst-color-text-muted: #c6bab4;
   --pst-color-border: #7e6d65;
   --pst-color-border-muted: #61554f;
