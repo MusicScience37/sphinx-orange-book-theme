@@ -40,6 +40,10 @@ html[data-theme="light"] {
   /* inline code */
   --pst-color-inline-code-links: {{ calculate_color("primary", 600) }};
   --pst-color-inline-code: {{ calculate_color("accent", 700) }};
+  /* tables */
+  --pst-color-table: {{ calculate_color("primary", 1) }};
+  --pst-color-table-row-hover-bg: {{ calculate_color("secondary", 100) }};
+  --pst-color-table-inner-border: {{ calculate_color("gray", 200) }};
 }
 
 html[data-theme="dark"] {
@@ -73,4 +77,8 @@ html[data-theme="dark"] {
   /* inline code */
   --pst-color-inline-code-links: {{ calculate_color("primary", 400) }};
   --pst-color-inline-code: {{ calculate_color("accent", 400) }};
+  /* tables */
+  --pst-color-table: {{ calculate_color("gray", 950) }};
+  --pst-color-table-row-hover-bg: {{ calculate_color("secondary", 800) }};
+  --pst-color-table-inner-border: {{ calculate_color("gray", 700) }};
 }
