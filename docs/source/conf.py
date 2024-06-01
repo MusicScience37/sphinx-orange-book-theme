@@ -103,8 +103,8 @@ html_title = "sphinx-orange-book-theme"
 
 html_theme_options = {
     # pygment configuration must be specified here.
-    "pygment_light_style": "gruvbox-light",
-    "pygment_dark_style": "native",
+    "pygments_light_style": "gruvbox-light",
+    "pygments_dark_style": "native",
     "repository_url": "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme",
     "use_repository_button": True,
 }
