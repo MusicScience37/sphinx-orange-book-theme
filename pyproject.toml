@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sphinx-orange-book-theme"
-version = "0.9.0"
+version = "0.10.0"
 description = "An orange version of sphinx-book-theme."
 authors = ["Kenta Kabashima <kenta_program37@hotmail.co.jp>"]
 license = "MIT"
@@ -15,7 +15,6 @@ classifiers = [
     "Framework :: Sphinx :: Theme",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -26,7 +25,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
 sphinx-book-theme = ">=1"
-pydata-sphinx-theme = ">=0.14"
+pydata-sphinx-theme = ">=0.15"
 sphinx = ">=6"
 
 [tool.poetry.group.dev.dependencies]
@@ -56,6 +55,8 @@ pandas = "^2.2.2"
 sphinxext-opengraph = "^0.9.1"
 sphinxcontrib-plantuml = "^0.29"
 sphinxcontrib-bibtex = "^2.6.2"
+# setuptools is required for sphinxcontrib-bibtex
+setuptools = "^70.0.0"
 
 [build-system]
 requires = ["poetry-core"]
