@@ -9,4 +9,5 @@ cd $(dirname $0)
 # prevent warning.
 export PYDEVD_DISABLE_FILE_VALIDATION=1 # cspell:disable-line
 
+mkdir -p build
 sphinx-autobuild source build --port 2765
