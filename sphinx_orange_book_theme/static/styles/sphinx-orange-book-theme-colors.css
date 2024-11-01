@@ -44,6 +44,8 @@ html[data-theme="light"] {
   --pst-color-table: #fefdfc;
   --pst-color-table-row-hover-bg: #ffebbc;
   --pst-color-table-inner-border: #dad3cf;
+  /* original */
+  --sobt-color-heading: #d66d32;
 }
 
 html[data-theme="dark"] {
@@ -81,4 +83,6 @@ html[data-theme="dark"] {
   --pst-color-table: #171514;
   --pst-color-table-row-hover-bg: #4c3e14;
   --pst-color-table-inner-border: #61554f;
+  /* original */
+  --sobt-color-heading: #e68f60;
 }
