@@ -43,11 +43,18 @@ exclude_patterns = []
 extensions += ["sphinx.ext.todo"]
 todo_include_todos = True
 
-# setting of mathjax
-extensions += ["sphinx.ext.mathjax"]
-mathjax3_config = {
-    "tex": {
-        "macros": {
+# setting of MathJax
+# Extension for MathJax is already enabled by myst_nb.
+# MathJax URL working with Plotly was written in https://www.npmjs.com/package/plotly.js/v/3.0.1.
+mathjax_path = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG.js"
+mathjax_config = {
+    "tex2jax": {
+        "inlineMath": [["$", "$"], ["\\(", "\\)"]],
+        "displayMath": [["$$", "$$"], ["\\[", "\\]"]],
+        "processClass": "math|output_area",
+    },
+    "TeX": {
+        "Macros": {
             "bm": ["{\\boldsymbol{#1}}", 1],
         },
     },
