@@ -5,9 +5,8 @@ import math
 import pathlib
 import re
 
-import cv2
+import colour
 import jinja2
-import numpy
 
 THIS_DIR = pathlib.Path(__file__).absolute().parent
 
@@ -44,17 +43,16 @@ def rgb_code_to_lch(code: str) -> tuple[float, float, float]:
     if not match:
         raise ValueError(f"Invalid RGB code: {code}")
 
-    r = int(match.group(1), 16)
-    g = int(match.group(2), 16)
-    b = int(match.group(3), 16)
+    r = int(match.group(1), 16) / 255.0
+    g = int(match.group(2), 16) / 255.0
+    b = int(match.group(3), 16) / 255.0
 
-    rgb_mat = numpy.array([[[r / 255.0, g / 255.0, b / 255.0]]], dtype=numpy.float32)
-    lab_mat = cv2.cvtColor(rgb_mat, cv2.COLOR_RGB2Lab)
-    l = lab_mat[0][0][0]
-    a = lab_mat[0][0][1]
-    b = lab_mat[0][0][2]
-    c = math.sqrt(a * a + b * b)
-    h = math.atan2(b, a) * 180 / math.pi
+    # RGB -> Lab
+    lab = colour.XYZ_to_Lab(colour.sRGB_to_XYZ([r, g, b]))
+    l, a, b_ = lab
+    # Lab -> LCh
+    c = math.sqrt(a * a + b_ * b_)
+    h = math.degrees(math.atan2(b_, a))
     if h < 0.0:
         h += 360.0
     return l, c, h
@@ -71,13 +69,14 @@ def lch_to_rgb_code(l: float, c: float, h: float) -> str:
     Returns:
         str: Color code.
     """
-    a = c * math.cos(h * math.pi / 180.0)
-    b = c * math.sin(h * math.pi / 180.0)
-    lab_mat = numpy.array([[[l, a, b]]], dtype=numpy.float32)
-    rgb_mat = cv2.cvtColor(lab_mat, cv2.COLOR_Lab2RGB)
-    r = int(rgb_mat[0][0][0] * 255.0)
-    g = int(rgb_mat[0][0][1] * 255.0)
-    b = int(rgb_mat[0][0][2] * 255.0)
+    a = c * math.cos(math.radians(h))
+    b_ = c * math.sin(math.radians(h))
+    lab = [l, a, b_]
+    rgb = colour.XYZ_to_sRGB(colour.Lab_to_XYZ(lab))
+    # clamp and convert to 0-255
+    r = int(min(max(rgb[0], 0.0), 1.0) * 255.0)
+    g = int(min(max(rgb[1], 0.0), 1.0) * 255.0)
+    b = int(min(max(rgb[2], 0.0), 1.0) * 255.0)
     return f"#{r:02x}{g:02x}{b:02x}"
 
 

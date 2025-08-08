@@ -13,15 +13,13 @@ repos:
     hooks:
       - id: black
         name: black
-        description: Format Python files using black.
-        entry: black
-        language: python
+        entry: poetry run black
+        language: system
         require_serial: true
-        types_or: [python]
+        types_or: [python, pyi]
       - id: isort
         name: isort
-        description: Format Python files using isort.
-        entry: isort
-        language: python
+        entry: poetry run isort
+        language: system
         require_serial: true
-        types_or: [python]
+        types_or: [python, pyi]
