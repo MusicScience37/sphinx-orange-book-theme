@@ -54,12 +54,12 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
   /* teal in the original theme */
   --pst-color-primary: #e68f60;
-  --pst-color-primary-bg: #633319;
+  --pst-color-primary-bg: #623319;
   /* violet in the original theme */
   --pst-color-secondary: #e1b809;
   --pst-color-secondary-bg: #4c3e14;
   /* pink in the original theme */
-  --pst-color-accent: #59b937;
+  --pst-color-accent: #58b936;
   --pst-color-accent-bg: #224814;
   /* gray in the original theme */
   --pst-color-background: #171514;
@@ -68,20 +68,20 @@ html[data-theme="dark"] {
   --pst-color-on-surface: #f0eceb;
   --pst-color-text-base: #f8f6f5;
   --pst-color-text-muted: #c6bab4;
-  --pst-color-border: #7e6d65;
+  --pst-color-border: #7d6d65;
   --pst-color-border-muted: #61554f;
   /* info, warning, success, danger */
   --pst-color-info: #379f14;
   --pst-color-info-bg: #224814;
   --pst-color-warning: #e1b809;
   --pst-color-warning-bg: #4c3e14;
-  --pst-color-success: #59b937;
+  --pst-color-success: #58b936;
   --pst-color-success-bg: #224814;
-  --pst-color-danger: #e0616d;
+  --pst-color-danger: #e1616d;
   --pst-color-danger-bg: #4e151d;
   /* inline code */
   --pst-color-inline-code-links: #c5a111;
-  --pst-color-inline-code: #59b937;
+  --pst-color-inline-code: #58b936;
   /* tables */
   --pst-color-table: #171514;
   --pst-color-table-row-hover-bg: #4c3e14;

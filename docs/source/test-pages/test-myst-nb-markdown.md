@@ -17,7 +17,7 @@ import plotly.express
 import plotly.graph_objects
 
 fig = plotly.express.line(x=[1, 2, 3], y=[3, 5, 4])
-plotly.graph_objects.FigureWidget(fig)
+fig.show(renderer="notebook_connected")
 ```
 
 ## Math equations
