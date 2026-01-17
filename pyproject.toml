@@ -15,15 +15,15 @@ classifiers = [
     "Framework :: Sphinx :: Theme",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Documentation :: Sphinx",
     "Topic :: Software Development :: Documentation",
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.12,<3.14"
+python = ">=3.12,<3.15"
 sphinx-book-theme = "^1.1.4"
 sphinx = ">=8.2.3"
 

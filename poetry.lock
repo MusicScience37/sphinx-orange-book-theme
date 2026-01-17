@@ -115,7 +115,10 @@ files = [
 ]
 
 [package.dependencies]
-cffi = {version = ">=1.0.1", markers = "python_version < \"3.14\""}
+cffi = [
+    {version = ">=1.0.1", markers = "python_version < \"3.14\""},
+    {version = ">=2.0.0b1", markers = "python_version >= \"3.14\""},
+]
 
 [[package]]
 name = "arrow"
@@ -3832,5 +3835,5 @@ type = ["pytest-mypy"]
 
 [metadata]
 lock-version = "2.1"
-python-versions = ">=3.12,<3.14"
-content-hash = "898708d567b57401c998a0a859a91e77a4ee86a2dcaba18ed8386c5a570e5b7b"
+python-versions = ">=3.12,<3.15"
+content-hash = "561ba1eb5f562f467976d453be3c7b6b86adcbab881f2195fee8e221a19942ad"
