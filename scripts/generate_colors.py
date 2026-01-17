@@ -12,7 +12,7 @@ THIS_DIR = pathlib.Path(__file__).absolute().parent
 
 # Map from level to lightness.
 LIGHTNESS_MAP = {
-    1: 99.5,
+    1: 99.0,
     50: 97.2,
     100: 93.95,
     200: 85.1,
@@ -97,10 +97,10 @@ def to_gray(origin: str) -> tuple[float, float, float]:
 # (The original color is the color to use in calculation of colors.)
 ORIGINAL_COLOR_MAP = {
     "primary": rgb_code_to_lch("#D4682A"),
-    "secondary": rgb_code_to_lch("#F0C403"),
-    "accent": rgb_code_to_lch("#3BB111"),
+    "secondary": rgb_code_to_lch("#3172D2"),
+    "accent": rgb_code_to_lch("#933A73"),
     "gray": to_gray("#DE6316"),
-    "info": rgb_code_to_lch("#3BB111"),
+    "info": rgb_code_to_lch("#2B63B8"),
     "warning": rgb_code_to_lch("#F0C403"),
     "danger": rgb_code_to_lch("#CB0541"),
 }
