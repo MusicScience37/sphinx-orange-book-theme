@@ -12,18 +12,18 @@ THIS_DIR = pathlib.Path(__file__).absolute().parent
 
 # Map from level to lightness.
 LIGHTNESS_MAP = {
-    1: 99.0,
-    50: 97.2,
-    100: 93.95,
-    200: 85.1,
-    300: 76.5,
-    400: 67.65,
-    500: 57.8,
-    600: 47.6,
-    700: 37.4,
-    800: 27.2,
-    900: 17.0,
-    950: 7.0,
+    1: 0.990,
+    50: 0.975,
+    100: 0.948,
+    200: 0.874,
+    300: 0.804,
+    400: 0.731,
+    500: 0.648,
+    600: 0.560,
+    700: 0.469,
+    800: 0.376,
+    900: 0.287,
+    950: 0.197,
 }
 
 
@@ -47,15 +47,7 @@ def rgb_code_to_lch(code: str) -> tuple[float, float, float]:
     g = int(match.group(2), 16) / 255.0
     b = int(match.group(3), 16) / 255.0
 
-    # RGB -> Lab
-    lab = colour.XYZ_to_Lab(colour.sRGB_to_XYZ([r, g, b]))
-    l, a, b_ = lab
-    # Lab -> LCh
-    c = math.sqrt(a * a + b_ * b_)
-    h = math.degrees(math.atan2(b_, a))
-    if h < 0.0:
-        h += 360.0
-    return l, c, h
+    return colour.Oklab_to_Oklch(colour.XYZ_to_Oklab(colour.sRGB_to_XYZ([r, g, b])))
 
 
 def lch_to_rgb_code(l: float, c: float, h: float) -> str:
@@ -69,10 +61,7 @@ def lch_to_rgb_code(l: float, c: float, h: float) -> str:
     Returns:
         str: Color code.
     """
-    a = c * math.cos(math.radians(h))
-    b_ = c * math.sin(math.radians(h))
-    lab = [l, a, b_]
-    rgb = colour.XYZ_to_sRGB(colour.Lab_to_XYZ(lab))
+    rgb = colour.XYZ_to_sRGB(colour.Oklab_to_XYZ(colour.Oklch_to_Oklab([l, c, h])))
     # clamp and convert to 0-255
     r = int(min(max(rgb[0], 0.0), 1.0) * 255.0)
     g = int(min(max(rgb[1], 0.0), 1.0) * 255.0)
@@ -90,15 +79,15 @@ def to_gray(origin: str) -> tuple[float, float, float]:
         tuple[float, float, float]: Gray color.
     """
     l, _, h = rgb_code_to_lch(origin)
-    return l, 10.0, h
+    return l, 0.025, h
 
 
 # Map from name of the original color to the original color.
 # (The original color is the color to use in calculation of colors.)
 ORIGINAL_COLOR_MAP = {
     "primary": rgb_code_to_lch("#D4682A"),
-    "secondary": rgb_code_to_lch("#3172D2"),
-    "accent": rgb_code_to_lch("#933A73"),
+    "secondary": rgb_code_to_lch("#2B63B8"),
+    "accent": rgb_code_to_lch("#7A2F5F"),
     "gray": to_gray("#DE6316"),
     "info": rgb_code_to_lch("#2B63B8"),
     "warning": rgb_code_to_lch("#F0C403"),
@@ -121,7 +110,7 @@ def calculate_color(original_color_name: str, level: int) -> str:
     if l < l_origin:
         c = c_origin * (l / l_origin)
     else:
-        c = c_origin * ((100.0 - l) / (100.0 - l_origin))
+        c = c_origin * ((1.0 - l) / (1.0 - l_origin))
     return lch_to_rgb_code(l, c, h)
 
 

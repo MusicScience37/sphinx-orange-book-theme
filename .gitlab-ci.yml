@@ -10,7 +10,7 @@ include:
 .poetry-base:
   image: musicscience37/sphinx-doxygen
   variables:
-    POETRY_PYTHON_VERSION: "3.12"
+    POETRY_PYTHON_VERSION: "3.13"
     POETRY_CACHE_DIR: ${CI_PROJECT_DIR}/.poetry-cache
   before_script:
     - poetry config virtualenvs.in-project true
@@ -68,6 +68,7 @@ build docs:
       - POETRY_PYTHON_VERSION:
           - "3.12"
           - "3.13"
+          - "3.14"
   script:
     - bash ./docs/cpp_example/generate_doxygen_xml.sh
     - poetry run sphinx-build -b html -W -q -D release=$PROJECT_VERSION
@@ -80,7 +81,7 @@ build docs:
 pages:
   stage: deploy
   image: alpine
-  needs: ["build docs: [3.12]"]
+  needs: ["build docs: [3.13]"]
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   script:
@@ -94,6 +95,7 @@ publish-package:
   needs:
     - "build docs: [3.12]"
     - "build docs: [3.13]"
+    - "build docs: [3.14]"
   stage: deploy
   rules:
     - if: $CI_COMMIT_TAG =~ /^v/
