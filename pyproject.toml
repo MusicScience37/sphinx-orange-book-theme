@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sphinx-orange-book-theme"
-version = "0.17.0"
+version = "0.18.0"
 description = "An orange version of sphinx-book-theme."
 authors = ["Kenta Kabashima <kenta_program37@hotmail.co.jp>"]
 license = "MIT"
