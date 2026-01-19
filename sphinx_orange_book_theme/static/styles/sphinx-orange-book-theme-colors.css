@@ -20,8 +20,8 @@ html[data-theme="light"] {
   --pst-color-accent: #af7c99;
   --pst-color-accent-bg: #f3ebef;
   /* gray in the original theme */
-  --pst-color-background: #fefaf9;
-  --pst-color-on-background: #fefaf9;
+  --pst-color-background: #fefdfd;
+  --pst-color-on-background: #fefdfd;
   --pst-color-surface: #fdf4f0;
   --pst-color-on-surface: #451d06;
   --pst-color-text-base: #2f2825;
@@ -41,7 +41,7 @@ html[data-theme="light"] {
   --pst-color-inline-code-links: #4173c0;
   --pst-color-inline-code: #843d69;
   /* tables */
-  --pst-color-table: #fefaf9;
+  --pst-color-table: #fefdfd;
   --pst-color-table-row-hover-bg: #f3ebef;
   --pst-color-table-inner-border: #dad3d0;
   /* links */
