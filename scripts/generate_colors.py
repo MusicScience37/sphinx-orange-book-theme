@@ -12,7 +12,7 @@ THIS_DIR = pathlib.Path(__file__).absolute().parent
 
 # Map from level to lightness.
 LIGHTNESS_MAP = {
-    1: 0.990,
+    1: 0.997,
     50: 0.975,
     100: 0.948,
     200: 0.874,
