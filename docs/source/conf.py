@@ -22,7 +22,7 @@ def read_version() -> str:
     root_dir = this_dir.parent.parent
     pyproject_toml_path = root_dir / "pyproject.toml"
     config = toml.load(str(pyproject_toml_path))
-    version = str(config["tool"]["poetry"]["version"])
+    version = str(config["project"]["version"])
     return version
 
 
@@ -46,18 +46,19 @@ todo_include_todos = True
 # setting of MathJax
 # Extension for MathJax is already enabled by myst_nb.
 # MathJax URL working with Plotly was written in https://www.npmjs.com/package/plotly.js/v/3.0.1.
-mathjax_path = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG.js"
-mathjax_config = {
-    "tex2jax": {
+# tex-svg-full.js is used to include all TeX extensions (e.g., boldsymbol) without autoload.
+mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg-full.js"
+mathjax3_config = {
+    "tex": {
         "inlineMath": [["$", "$"], ["\\(", "\\)"]],
         "displayMath": [["$$", "$$"], ["\\[", "\\]"]],
-        "processClass": "math|output_area",
-    },
-    "TeX": {
-        "Macros": {
+        "macros": {
             "bm": ["{\\boldsymbol{#1}}", 1],
         },
     },
+}
+mathjax_options = {
+    "defer": None,
 }
 
 # settings of breathe

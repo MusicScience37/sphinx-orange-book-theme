@@ -13,11 +13,19 @@ file_format: mystnb
 ## Use of plotly package
 
 ```{code-cell}
+import IPython.display
 import plotly.express
-import plotly.graph_objects
+import plotly.io
 
 fig = plotly.express.line(x=[1, 2, 3], y=[3, 5, 4])
-fig.show(renderer="notebook_connected")
+IPython.display.HTML(
+    plotly.io.to_html(
+        fig,
+        full_html=False,
+        include_plotlyjs="cdn",
+        include_mathjax=False,
+    )
+)
 ```
 
 ## Math equations
