@@ -1,19 +1,19 @@
-[tool.poetry]
+[project]
 name = "sphinx-orange-book-theme"
 version = "0.19.0"
 description = "An orange version of sphinx-book-theme."
-authors = ["Kenta Kabashima <kenta_program37@hotmail.co.jp>"]
+authors = [
+    { name = "Kenta Kabashima", email = "kenta_program37@hotmail.co.jp" },
+]
 license = "MIT"
 readme = "README.md"
-homepage = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme"
-documentation = "https://sphinx-orange-book-theme-musicscience37projects--1dc46f9ab80e60.gitlab.io/"
-repository = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme.git"
 keywords = ["sphinx"]
-# Classifiers: https://pypi.org/classifiers/
 classifiers = [
     "Development Status :: 4 - Beta",
     "Framework :: Sphinx :: Theme",
     "Intended Audience :: Developers",
+    # poetry says that the following classifier of license is deprecated,
+    # but actually PyPI requires it for correct handling.
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
@@ -21,11 +21,16 @@ classifiers = [
     "Topic :: Documentation :: Sphinx",
     "Topic :: Software Development :: Documentation",
 ]
+requires-python = ">=3.12,<3.15"
+dependencies = ["sphinx-book-theme>=1.2.0", "sphinx>=9.1.0"]
 
-[tool.poetry.dependencies]
-python = ">=3.12,<3.15"
-sphinx-book-theme = ">=1.2.0"
-sphinx = ">=9.1.0"
+[project.urls]
+Homepage = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme"
+Documentation = "https://sphinx-orange-book-theme-musicscience37projects--1dc46f9ab80e60.gitlab.io/"
+Repository = "https://gitlab.com/MusicScience37Projects/utility-libraries/sphinx-orange-book-theme.git"
+
+[project.entry-points."sphinx.html_themes"]
+sphinx_orange_book_theme = "sphinx_orange_book_theme"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.6.0"
@@ -61,6 +66,3 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.isort]
 profile = "black"
-
-[tool.poetry.plugins."sphinx.html_themes"]
-sphinx_orange_book_theme = "sphinx_orange_book_theme"
