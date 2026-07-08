@@ -11,84 +11,84 @@
  *************************************************************************** */
 html[data-theme="light"] {
   /* teal in the original theme */
-  --pst-color-primary: #d56d33;
-  --pst-color-primary-bg: #fbe9e1;
+  --pst-color-primary: #ca7639;
+  --pst-color-primary-bg: #fbe9df;
   /* violet in the original theme */
-  --pst-color-secondary: #668fce;
-  --pst-color-secondary-bg: #e7eef8;
+  --pst-color-secondary: #7e9a50;
+  --pst-color-secondary-bg: #ebefe4;
   /* pink in the original theme */
-  --pst-color-accent: #af7c99;
-  --pst-color-accent-bg: #f3ebef;
+  --pst-color-accent: #3aa09b;
+  --pst-color-accent-bg: #e1f1f0;
   /* gray in the original theme */
   --pst-color-background: #fefdfd;
   --pst-color-on-background: #fefdfd;
-  --pst-color-surface: #fdf4f0;
-  --pst-color-on-surface: #451d06;
-  --pst-color-text-base: #2f2825;
-  --pst-color-text-muted: #635752;
-  --pst-color-border: #c7bcb7;
-  --pst-color-border-muted: #dad3d0;
+  --pst-color-surface: #fdf4ef;
+  --pst-color-on-surface: #40210b;
+  --pst-color-text-base: #2e2925;
+  --pst-color-text-muted: #625851;
+  --pst-color-border: #c7bcb5;
+  --pst-color-border-muted: #dbd3cf;
   /* info, warning, success, danger */
-  --pst-color-info: #668fce;
-  --pst-color-info-bg: #e7eef8;
+  --pst-color-info: #7e9a50;
+  --pst-color-info-bg: #ebefe4;
   --pst-color-warning: #ab8b01;
   --pst-color-warning-bg: #faedc5;
-  --pst-color-success: #668fce;
-  --pst-color-success-bg: #e7eef8;
+  --pst-color-success: #7e9a50;
+  --pst-color-success-bg: #ebefe4;
   --pst-color-danger: #cf264a;
   --pst-color-danger-bg: #fde7e8;
   /* inline code */
-  --pst-color-inline-code-links: #4173c0;
-  --pst-color-inline-code: #843d69;
+  --pst-color-inline-code-links: #647f2f;
+  --pst-color-inline-code: #226662;
   /* tables */
   --pst-color-table: #fefdfd;
-  --pst-color-table-row-hover-bg: #f3ebef;
-  --pst-color-table-inner-border: #dad3d0;
+  --pst-color-table-row-hover-bg: #e1f1f0;
+  --pst-color-table-inner-border: #dbd3cf;
   /* links */
-  --pst-color-link: #4173c0;
-  --pst-color-link-hover: #9a5d81;
+  --pst-color-link: #647f2f;
+  --pst-color-link-hover: #2e837e;
   /* original */
-  --sobt-color-heading: #d56d33;
+  --sobt-color-heading: #ca7639;
 }
 
 html[data-theme="dark"] {
   /* teal in the original theme */
-  --pst-color-primary: #e29067;
-  --pst-color-primary-bg: #672f0e;
+  --pst-color-primary: #e49057;
+  --pst-color-primary-bg: #5f3415;
   /* violet in the original theme */
-  --pst-color-secondary: #a8c0e5;
-  --pst-color-secondary-bg: #193f79;
+  --pst-color-secondary: #b5c69d;
+  --pst-color-secondary-bg: #374817;
   /* pink in the original theme */
-  --pst-color-accent: #c29ab0;
-  --pst-color-accent-bg: #65254e;
+  --pst-color-accent: #5cbab4;
+  --pst-color-accent-bg: #164a47;
   /* gray in the original theme */
-  --pst-color-background: #260d02;
-  --pst-color-on-background: #451d06;
-  --pst-color-surface: #451d06;
-  --pst-color-on-surface: #fbe9e1;
+  --pst-color-background: #220f03;
+  --pst-color-on-background: #40210b;
+  --pst-color-surface: #40210b;
+  --pst-color-on-surface: #fbe9df;
   --pst-color-text-base: #f7f6f5;
-  --pst-color-text-muted: #dad3d0;
-  --pst-color-border: #7f7069;
-  --pst-color-border-muted: #635752;
+  --pst-color-text-muted: #dbd3cf;
+  --pst-color-border: #7e7169;
+  --pst-color-border-muted: #625851;
   /* info, warning, success, danger */
-  --pst-color-info: #668fce;
-  --pst-color-info-bg: #193f79;
+  --pst-color-info: #7e9a50;
+  --pst-color-info-bg: #374817;
   --pst-color-warning: #e4ba02;
   --pst-color-warning-bg: #4f3f00;
-  --pst-color-success: #89a9da;
-  --pst-color-success-bg: #193f79;
+  --pst-color-success: #9bb179;
+  --pst-color-success-bg: #374817;
   --pst-color-danger: #de5d6c;
   --pst-color-danger-bg: #550016;
   /* inline code */
-  --pst-color-inline-code-links: #89a9da;
-  --pst-color-inline-code: #d3b4c5;
+  --pst-color-inline-code-links: #9bb179;
+  --pst-color-inline-code: #8dcdc8;
   /* tables */
   --pst-color-table: #181412;
-  --pst-color-table-row-hover-bg: #65254e;
-  --pst-color-table-inner-border: #635752;
+  --pst-color-table-row-hover-bg: #164a47;
+  --pst-color-table-inner-border: #625851;
   /* links */
-  --pst-color-link: #89a9da;
-  --pst-color-link-hover: #c29ab0;
+  --pst-color-link: #9bb179;
+  --pst-color-link-hover: #5cbab4;
   /* original */
-  --sobt-color-heading: #e29067;
+  --sobt-color-heading: #e49057;
 }
