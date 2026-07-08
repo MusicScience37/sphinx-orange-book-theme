@@ -1,6 +1,6 @@
 [project]
 name = "sphinx-orange-book-theme"
-version = "0.20.0"
+version = "0.21.0"
 description = "An orange version of sphinx-book-theme."
 authors = [
     { name = "Kenta Kabashima", email = "kenta_program37@hotmail.co.jp" },
@@ -49,9 +49,9 @@ doc8 = "^2.0.0"
 [tool.poetry.group.test.dependencies]
 breathe = "^4.36.0"
 myst-nb = "^1.4.0"
-jupyterlab = "^4.5.9"
+jupyterlab = "^4.6.1"
 ipywidgets = "^8.1.8"
-ipython = "^9.14.1"
+ipython = "^9.15.0"
 ipykernel = "^7.3.0"
 plotly = "^6.8.0"
 pandas = "^3.0.3"

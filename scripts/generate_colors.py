@@ -85,11 +85,11 @@ def to_gray(origin: str) -> tuple[float, float, float]:
 # Map from name of the original color to the original color.
 # (The original color is the color to use in calculation of colors.)
 ORIGINAL_COLOR_MAP = {
-    "primary": rgb_code_to_lch("#D4682A"),
-    "secondary": rgb_code_to_lch("#2B63B8"),
-    "accent": rgb_code_to_lch("#7A2F5F"),
-    "gray": to_gray("#DE6316"),
-    "info": rgb_code_to_lch("#2B63B8"),
+    "primary": rgb_code_to_lch("#E08340"),  # oklch(0.7, 0.14, 0.15)
+    "secondary": rgb_code_to_lch("#6E8C35"),  # oklch(0.6, 0.12, 0.35)
+    "accent": rgb_code_to_lch("#42B2AC"),  # oklch(0.7, 0.1, 0.53)
+    "gray": to_gray("#E08340"),
+    "info": rgb_code_to_lch("#6E8C35"),
     "warning": rgb_code_to_lch("#F0C403"),
     "danger": rgb_code_to_lch("#CB0541"),
 }
