@@ -19,7 +19,7 @@ LIGHTNESS_MAP = {
     300: 0.804,
     400: 0.731,
     500: 0.648,
-    600: 0.560,
+    600: 0.530,
     700: 0.469,
     800: 0.376,
     900: 0.287,
@@ -87,7 +87,7 @@ def to_gray(origin: str) -> tuple[float, float, float]:
 ORIGINAL_COLOR_MAP = {
     "primary": rgb_code_to_lch("#E08340"),  # oklch(0.7, 0.14, 0.15)
     "secondary": rgb_code_to_lch("#6E8C35"),  # oklch(0.6, 0.12, 0.35)
-    "accent": rgb_code_to_lch("#42B2AC"),  # oklch(0.7, 0.1, 0.53)
+    "accent": rgb_code_to_lch("#2BB2BB"),  # oklch(0.7, 0.11, 0.56)
     "gray": to_gray("#E08340"),
     "info": rgb_code_to_lch("#6E8C35"),
     "warning": rgb_code_to_lch("#F0C403"),
