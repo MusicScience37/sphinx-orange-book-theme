@@ -46,7 +46,7 @@ html[data-theme="light"] {
   --pst-color-table-inner-border: #dbd3cf;
   /* links */
   --pst-color-link: #1a7980;
-  --pst-color-link-hover: #9a5829;
+  --pst-color-link-hover: #ca7639;
   /* original */
   --sobt-color-heading: #ca7639;
 }
@@ -68,7 +68,7 @@ html[data-theme="dark"] {
   --pst-color-on-surface: #fbe9df;
   --pst-color-text-base: #f7f6f5;
   --pst-color-text-muted: #dbd3cf;
-  --pst-color-border: #756961;
+  --pst-color-border: #9a8b81;
   --pst-color-border-muted: #625851;
   /* info, warning, success, danger */
   --pst-color-info: #7e9a50;
