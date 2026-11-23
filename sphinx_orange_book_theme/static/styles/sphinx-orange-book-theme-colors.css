@@ -17,8 +17,8 @@ html[data-theme="light"] {
   --pst-color-secondary: #7e9a50;
   --pst-color-secondary-bg: #ebefe4;
   /* pink in the original theme */
-  --pst-color-accent: #3aa09b;
-  --pst-color-accent-bg: #e1f1f0;
+  --pst-color-accent: #25a0a8;
+  --pst-color-accent-bg: #e0f1f3;
   /* gray in the original theme */
   --pst-color-background: #fefdfd;
   --pst-color-on-background: #fefdfd;
@@ -38,14 +38,14 @@ html[data-theme="light"] {
   --pst-color-danger: #c7043f;
   --pst-color-danger-bg: #fde7e8;
   /* inline code */
-  --pst-color-inline-code-links: #2a7975;
+  --pst-color-inline-code-links: #1a7980;
   --pst-color-inline-code: #4d6323;
   /* tables */
   --pst-color-table: #fefdfd;
-  --pst-color-table-row-hover-bg: #e1f1f0;
+  --pst-color-table-row-hover-bg: #e0f1f3;
   --pst-color-table-inner-border: #dbd3cf;
   /* links */
-  --pst-color-link: #2a7975;
+  --pst-color-link: #1a7980;
   --pst-color-link-hover: #9a5829;
   /* original */
   --sobt-color-heading: #ca7639;
@@ -59,8 +59,8 @@ html[data-theme="dark"] {
   --pst-color-secondary: #b5c69d;
   --pst-color-secondary-bg: #374817;
   /* pink in the original theme */
-  --pst-color-accent: #5cbab4;
-  --pst-color-accent-bg: #164a47;
+  --pst-color-accent: #4ebac2;
+  --pst-color-accent-bg: #0c4a4e;
   /* gray in the original theme */
   --pst-color-background: #220f03;
   --pst-color-on-background: #40210b;
@@ -80,14 +80,14 @@ html[data-theme="dark"] {
   --pst-color-danger: #de5d6c;
   --pst-color-danger-bg: #550016;
   /* inline code */
-  --pst-color-inline-code-links: #5cbab4;
+  --pst-color-inline-code-links: #4ebac2;
   --pst-color-inline-code: #b5c69d;
   /* tables */
   --pst-color-table: #181412;
-  --pst-color-table-row-hover-bg: #164a47;
+  --pst-color-table-row-hover-bg: #0c4a4e;
   --pst-color-table-inner-border: #625851;
   /* links */
-  --pst-color-link: #5cbab4;
+  --pst-color-link: #4ebac2;
   --pst-color-link-hover: #e49057;
   /* original */
   --sobt-color-heading: #e49057;
